@@ -1,0 +1,44 @@
+<canvas width="600" height="400"></canvas>
+
+<script type="text/javascript">
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = "black";
+	pincel.fillRect(0, 0, 600, 400);
+
+	// desenha o fundo verde
+	pincel.fillStyle = "green";
+	pincel.fillRect(3, 3, 594, 394);
+
+
+	pincel.fillStyle = 'black';
+	pincel.beginPath();
+	pincel.moveTo(25, 200);
+	pincel.lineTo(300, 25);
+	pincel.lineTo(585, 200);
+	pincel.lineTo(300, 385);
+	pincel.fill();
+
+	// desenha o losangolo amarelo
+	pincel.fillStyle = 'yellow';
+	pincel.beginPath();
+	pincel.moveTo(30, 200);
+	pincel.lineTo(300, 30);
+	pincel.lineTo(580, 200);
+	pincel.lineTo(300, 380);
+	pincel.fill();
+
+	pincel.fillStyle = "black";
+	pincel.beginPath();
+	pincel.arc(300, 200, 113, 0, 2*3.14);
+	pincel.fill();
+
+	// desenha o circulo azul
+	pincel.fillStyle = "blue";
+	pincel.beginPath();
+	pincel.arc(300, 200, 110, 0, 2*3.14);
+	pincel.fill();
+
+</script>
